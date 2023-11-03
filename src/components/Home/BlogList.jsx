@@ -4,19 +4,18 @@ import Typography from '@mui/material/Typography';
 import '@fontsource/roboto/300.css';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import { Height } from "@mui/icons-material";
 
 function BlogList() {
     return (
-        <Container>
-            <Box sx={{pt: 5, mt: 5}}>
-                <Typography variant="h4" textAlign="left">
+        <Container maxWidth={false} sx={{ bgcolor: '#f1f8e9'}}>
+            <Container  sx={{ pt: 5, mt: 5, pl: '5'}}>
+                <Typography variant="h4">
                     Featured Posts
                 </Typography>
-                <Link underline="hover" variant="h6" href="#" color="inherit" textAlign="right">
+                <Link underline="hover" variant="h6" href="#" color="inherit">
                     View All Posts
                 </Link>
-            </Box>
+            </Container>
         </Container>
     )
 }
